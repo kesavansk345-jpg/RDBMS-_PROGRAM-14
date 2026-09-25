@@ -1,9 +1,15 @@
--- Write your solution below.
--- Declare two variables, calculate their sum, and display the result.
+SET SERVEROUTPUT ON;
+
 
 DECLARE
-    -- Declare the variables here.
+num1 NUMBER:=10;
+num2 NUMBER:=20;
+total NUMBER;
 BEGIN
-    -- Assign values, calculate the sum, and display it here.
-    NULL;
+total:=num1+num2;
+
+DBMS_OUTPUT.PUT_LINE('first number:'||num1);
+DBMS_OUTPUT.PUT_LINE('second number:'||num2);
+DBMS_OUTPUT,PUT_LINE('SUM:'||total);
 END;
+/
